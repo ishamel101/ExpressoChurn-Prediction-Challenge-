@@ -13,7 +13,7 @@ install_packages(packages)
 
 import pandas as pd
 import numpy as np
-from scipy import stats
+#from scipy import stats
 from sklearn.preprocessing import LabelEncoder
 import streamlit as st
 from sklearn.model_selection import train_test_split
@@ -42,7 +42,7 @@ def handle_missing_values(df):
     return df
 
 # Remove outliers using z-score
-def remove_outliers_zscore(df):
+#def remove_outliers_zscore(df):
     z_scores = np.abs(stats.zscore(df.select_dtypes(exclude="object")))
     df_no_outliers = df[(z_scores < 3).all(axis=1)]
     return df_no_outliers
@@ -57,7 +57,7 @@ def encode_categorical_variables(df):
 
 # Apply data preprocessing steps
 data = handle_missing_values(data)
-data = remove_outliers_zscore(data)
+#data = remove_outliers_zscore(data)
 data = encode_categorical_variables(data)
 
 # Machine Learning Functions
