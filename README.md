@@ -15,5 +15,6 @@ The dataset used in this project is sourced from the Expresso Churn Prediction C
 - **Model Development:** Various machine learning algorithms such as logistic regression, decision trees, random forests, gradient boosting, and neural networks are implemented to build predictive models. Hyperparameter tuning and model evaluation techniques are employed to select the best-performing model.
 - **Deployment:** The final model is deployed as a Streamlit web app, allowing users to input customer data and receive churn probability predictions in real-time.
 
+## App link: https://epfjdnrpnobvjhkagzbftx.streamlit.app/ 
   ##### This project done by: *ISMAIL AIT ALI MHAMED*
   ##### GITHUB: ishamel101
